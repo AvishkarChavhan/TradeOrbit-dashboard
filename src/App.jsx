@@ -1,17 +1,8 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import Dashboard from "./DashBoard";
+import Home from "./Home";
 
-import { GeneralContextProvider } from "./context/GeneralContext";
-
-function App() {
-  return (
-    <BrowserRouter>
-      <GeneralContextProvider>
-        <Dashboard />
-      </GeneralContextProvider>
-    </BrowserRouter>
-  );
-}
+const App = () => {
+  return <Home />;
+};
 
 export default App;
