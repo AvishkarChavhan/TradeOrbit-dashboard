@@ -730,8 +730,10 @@ hr {
   height: 30px;
   border-radius: 4px;
   text-align: center;
+  justify-content: center;
   margin-right: 8px;
   cursor: pointer;
+  
 }
 
 .buy {
