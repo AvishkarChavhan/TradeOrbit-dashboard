@@ -1,0 +1,92 @@
+/* orders.css */
+
+.orders {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.order-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: start;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+}
+
+.order-item {
+  background-color: #fffff7;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.order-item p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.order-item strong {
+  color: #0f62fe;
+  font-size: 1.1rem;
+}
+
+.order-item button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f25355;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.order-item button:hover {
+  background-color: #d9363e;
+}
+
+.no-orders {
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.no-orders p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.no-orders .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f62fe;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.no-orders .btn:hover {
+  background-color: #0043ce;
+}
+
+@media (min-width: 768px) {
+  .order-item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
